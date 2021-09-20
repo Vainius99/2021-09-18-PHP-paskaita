@@ -17,6 +17,8 @@ if($result->num_rows != 0) {
     header("Location:404.php");
 }
 
+
+
 ?>
 
 

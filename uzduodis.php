@@ -7,8 +7,8 @@ X 4. Prie sistemos prijungti vartotojų prisijungimą.
 Puslapius gali pasiekti tik prisijungę vartotojai.
 Vartotojo tipai 2: skaitytojas, administratorius.
 
-5. Administratorius prie kiekvieno puslapio kortelės turi matyti mygtuką "Edit". Pvz: http://prntscr.com/1sogdxw
-6. Paspaudus mygtuką "Edit" administratoriui atsidaro puslapio redagavimo forma.
-7. "Santrauka" bei "Turinys" turi būti redaguojamas su SummerNote papildiniu.
-8. Redagavimo formos neturi pasiekti neprisijungęs vartotojas bei skaitytojas. 
+X 5. Administratorius prie kiekvieno puslapio kortelės turi matyti mygtuką "Edit". Pvz: http://prntscr.com/1sogdxw
+X 6. Paspaudus mygtuką "Edit" administratoriui atsidaro puslapio redagavimo forma.
+X 7. "Santrauka" bei "Turinys" turi būti redaguojamas su SummerNote papildiniu.
+X 8. Redagavimo formos neturi pasiekti neprisijungęs vartotojas bei skaitytojas. 
 -->

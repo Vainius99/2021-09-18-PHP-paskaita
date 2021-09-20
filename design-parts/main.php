@@ -25,7 +25,10 @@
                     <h5 class="card-title"><?php echo $pages["pavadinimas"]; ?></h5>
                     <p class="card-text"><?php echo $pages["santrauka"]; ?></p>
                     <a href="puslapiai.php?href=<?php echo $pages["nuoroda"]; ?>" class="btn btn-primary">Go somewhere</a>
+                    <?php $userRights = explode("|", $_COOKIE["login"]); 
+                    if($userRights[3] == 1) { ?>
                     <a href="puslapiaiEdit.php?href=<?php echo $pages["nuoroda"]; ?>" class="text-danger edit"> Edit </a>
+                    <?php } ?>
                 </div>
             </div>
 

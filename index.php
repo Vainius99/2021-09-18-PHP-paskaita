@@ -13,7 +13,14 @@
     <div class="container">
         <?php require_once("design-parts/meniu.php"); ?>
         <?php require_once("design-parts/jumbotron.php"); ?>
+        
         <?php showJumbotron("Slapta informacija", "Welcome to our blog of secrets"); ?>
+
+        <!-- Prisiminti kaip padaryti kad zinute isnyktu -->
+        <?php if ( isset($_GET['success']) && $_GET['success'] == 1 ) {  ?> 
+            <div class="message alert alert-success" role="alert"> Sekmingai pakeista </div>
+            <?php } ?> 
+            
         <?php require_once("design-parts/main.php"); ?>
     </div>
 
