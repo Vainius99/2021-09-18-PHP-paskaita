@@ -10,10 +10,9 @@ echo '
 
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+<script src="js/main.js"></script> 
 ';
-
-
-// <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 ?>
 
