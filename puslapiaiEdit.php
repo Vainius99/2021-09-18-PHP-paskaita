@@ -72,7 +72,23 @@ if($result->num_rows != 0 && $userRights[3] == 1) {
                 </div>
                 <div class="form-group">
                     <h4>Kategorijos_id</h4>
-                    <input class="form-control" type="text" name="kategorijos_id" value="<?php echo $page["kategorijos_id"] ?>"/>
+                    <select class="form-control" name="kategorijos_id">
+                    <?php 
+                    $sql = "SELECT * FROM kategorijos";
+                    $result1 = $conn->query($sql);
+
+                    while($catID = mysqli_fetch_array($result1)) {
+
+                        if($page["kategorijos_id"] == $catID['tevinis_id'] ) {
+                            echo "<option value='".$catID['pavadinimas']."' selected='true'>";
+                        }  else {
+                            echo "<option value='".$catID['pavadinimas']."'>";
+                        }   
+                            echo $catID['pavadinimas'];
+                        echo "</option>";
+                    }
+                    ?>
+                   </select>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-12"> 

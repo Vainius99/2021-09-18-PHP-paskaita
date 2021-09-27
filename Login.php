@@ -49,11 +49,11 @@ if(isset($_POST["submit"])) {
         <form action="login.php" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input class="form-control" type="text" name="username" />
+                <input class="form-control" type="text" name="username" value="admin" />
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input class="form-control" type="password" name="password" />
+                <input class="form-control" type="password" name="password" value="admin" />
             </div>
             <button class="btn btn-primary" type="submit" name="submit">Prisijungti</button>
             <br>

@@ -25,4 +25,10 @@ echo '
     .hide {
         display: none;
     }
+    .puslapis  {
+       
+        left : 3.8889rem;
+        bottom: 0.8889rem;
+    }
+    
 </style>

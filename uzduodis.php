@@ -12,3 +12,13 @@ X 6. Paspaudus mygtuką "Edit" administratoriui atsidaro puslapio redagavimo for
 X 7. "Santrauka" bei "Turinys" turi būti redaguojamas su SummerNote papildiniu.
 X 8. Redagavimo formos neturi pasiekti neprisijungęs vartotojas bei skaitytojas. 
 -->
+
+<!--    
+        X 1. Pasinaudojant paskaitos kodu atvaizduoti kategorijas šoninėje juostoje.
+        X 2. Pasinaudojant paskaitos kodu, pritaikyti šoninės juostos pozcijos keitimą bei kategorijų atvaizdavimo nustatymus. 
+        Šiuos nustatymus gali keisti tik administratorius.
+        3. Sukurti kategorijų redagavimą. Redaguojant kategoriją, turi būti galimybė nustatyti tėvynę kategoriją. Ji nustatoma su select HTML žyme.
+        4. Sukurti galimybę pridėti naują kategoriją.
+
+Papildoma: Pasinaudojant duomenų bazės lentele Meniu sukurti meniu atvaizdavimą. Meniu gali būti nuorodos į kategorijas arba į atskirus puslapius. 
+Meniu atvaizduoti pasinaudojant NavBAr elementu http://prntscr.com/1tkcsbp -->
