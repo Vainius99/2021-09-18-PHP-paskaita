@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imones redagavimas</title>
+    <title>Kategorijos redagavimas</title>
     <?php require_once("includes.php"); ?>
     <style>
     .hide {
@@ -42,11 +42,11 @@ if(isset($_GET["submit"])) {
         $sql = "UPDATE `kategorijos` SET `pavadinimas`='$pavadinimas',`tevinis_id`= $tevinis_id ,`aprasymas`= '$aprasymas'  WHERE ID = $id";
 
         if(mysqli_query($conn, $sql)) {
-            $message =  "Kategorija redaguota sėkmingai (Po 3 sekundziu griste i Admin)";
+            $message =  "Kategorija redaguota sėkmingai (Po 2 sekundziu griste i Admin)";
             $class = "success";
             $hideForm = true;           
            
-            echo '<meta http-equiv="refresh" content="3;url=Admin.php">';
+            echo '<meta http-equiv="refresh" content="2;url=Admin.php">';
 
         } else {
             $negerai =  "Kazkas ivyko negerai";
