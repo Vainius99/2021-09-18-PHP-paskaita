@@ -22,3 +22,5 @@ X 8. Redagavimo formos neturi pasiekti neprisijungęs vartotojas bei skaitytojas
 
 Papildoma: Pasinaudojant duomenų bazės lentele Meniu sukurti meniu atvaizdavimą. Meniu gali būti nuorodos į kategorijas arba į atskirus puslapius. 
 Meniu atvaizduoti pasinaudojant NavBAr elementu http://prntscr.com/1tkcsbp -->
+
+<input class="hide" type="text" name="ID" value ="<?php echo $$category["ID"] ?>" />
