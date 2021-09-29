@@ -123,6 +123,90 @@
         }
         
         ?>
+                <h2> Kategoriju dropdown atvaizdavimas </h2>
+
+        <form action="admin.php" method="get">
+            <?php 
+
+            $sql = "SELECT reiksme FROM nustatymai WHERE ID = 2 "; 
+            $result = $conn->query($sql);
+            $selected_value = mysqli_fetch_array($result);
+            
+            $checked = array("","");
+                
+                if($selected_value[0] == "nerodyti") {
+                    $checked[0] = "checked";
+                } else if ($selected_value[0] == "rodyti") {
+                    $checked[1] = "checked";
+                }
+            
+            ?>
+
+            <input  type="radio" name="show_dropdown" value="2" <?php echo $checked[0]; ?> > Nerodyti kategorijų dropdown</br>
+            <input  type="radio" name="show_dropdown" value="1" <?php echo $checked[1]; ?> > Rodyti kategorijų dropdown</br>
+            <input class="btn btn-primary" type="submit" name="submit3" value="Išsaugoti">
+        </form>
+
+        <?php
+        if(isset($_GET["submit3"])) {
+            $show_dropdown = $_GET["show_dropdown"];
+
+                $sql = "UPDATE `nustatymai` SET `reiksme`='$show_dropdown' WHERE ID = 2";
+                $result = $conn->query($sql);
+
+                if($conn->query($sql)) {
+                    echo "Nustatymas pakeistas sėkmingai";
+                    echo "<script type='text/javascript'>window.top.location='admin.php';</script>";
+                } else {
+                    echo "Kažkas įvyko negerai";
+                }
+        }
+        
+        
+        ?>
+        <h2> Puslapiu dropdown atvaizdavimas </h2>
+
+<form action="admin.php" method="get">
+    <?php 
+
+    $sql = "SELECT reiksme FROM nustatymai WHERE ID = 3 "; 
+    $result = $conn->query($sql);
+    $selected_value = mysqli_fetch_array($result);
+    
+    $checked = array("","");
+        
+        if($selected_value[0] == "nerodyti") {
+            $checked[0] = "checked";
+        } else if ($selected_value[0] == "rodyti") {
+            $checked[1] = "checked";
+        }
+    
+    ?>
+
+    <input  type="radio" name="show_pages" value="2" <?php echo $checked[0]; ?> > Nerodyti kategorijų dropdown</br>
+    <input  type="radio" name="show_pages" value="1" <?php echo $checked[1]; ?> > Rodyti kategorijų dropdown</br>
+    <input class="btn btn-primary" type="submit" name="submit4" value="Išsaugoti">
+</form>
+
+<?php
+if(isset($_GET["submit4"])) {
+    $show_pages = $_GET["show_pages"];
+
+        $sql = "UPDATE `nustatymai` SET `reiksme`='$show_pages' WHERE ID = 3";
+        $result = $conn->query($sql);
+
+        if($conn->query($sql)) {
+            echo "Nustatymas pakeistas sėkmingai";
+            echo "<script type='text/javascript'>window.top.location='admin.php';</script>";
+        } else {
+            echo "Kažkas įvyko negerai";
+        }
+}
+
+
+?>
     </div>
+
+    <!-- puslapiu atvaizdavima sukurti dar -->
 </body>
 </html>

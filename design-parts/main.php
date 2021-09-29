@@ -34,10 +34,10 @@ $sidebar_value = mysqli_fetch_array($result);
             puslapiai.santrauka, 
             kategorijos.pavadinimas AS kategorijos_pavadinimas,
             kategorijos.ID
-            FROM puslapiai 
+            FROM puslapiai
             LEFT JOIN kategorijos
             ON puslapiai.kategorijos_id = kategorijos.ID
-            WHERE puslapiai.kategorijos_id = $catID
+            WHERE puslapiai.kategorijos_id = $catID AND puslapiai.rodyti = 1
             ORDER BY puslapiai.ID DESC";    
         } else {
             $sql = "SELECT puslapiai.pavadinimas, 
@@ -45,9 +45,10 @@ $sidebar_value = mysqli_fetch_array($result);
             puslapiai.santrauka, 
             kategorijos.pavadinimas AS kategorijos_pavadinimas,
             kategorijos.ID
-            FROM puslapiai 
+            FROM puslapiai
             LEFT JOIN kategorijos
             ON puslapiai.kategorijos_id = kategorijos.ID
+            WHERE puslapiai.rodyti = 1
             ORDER BY puslapiai.ID DESC";
         }
 

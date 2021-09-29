@@ -11,7 +11,8 @@ echo '
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
-<script src="js/main.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>  
 ';
 
 ?>
@@ -30,6 +31,5 @@ echo '
         left : 3.8889rem;
         bottom: 0.8889rem;
     }
-    
     
 </style>

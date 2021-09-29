@@ -41,8 +41,8 @@
             $kategorijos_id = rand(1, 4);
 
 
-            $sql = "INSERT INTO `puslapiai`(`pavadinimas`, `nuoroda`, `turinys`, `santrauka`, `kategorijos_id` ) 
-            VALUES ('$pavadinimas','$nuoroda','$turinys', '$santrauka', '$kategorijos_id')";
+            $sql = "INSERT INTO `puslapiai`(`pavadinimas`, `nuoroda`, `turinys`, `santrauka`, `kategorijos_id`, `rodyti` ) 
+            VALUES ('$pavadinimas','$nuoroda','$turinys', '$santrauka', '$kategorijos_id', 1)";
 
             if(mysqli_query($conn, $sql)) {
                 echo "Puslapis sukurtas sekmingai";
